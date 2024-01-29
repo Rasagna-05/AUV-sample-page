@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AUV SAMPLE PAGE</title>
+<style>
+  .light {
+    background-color: #eff6f9;
+    color: #302e2e;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    margin-left: 42%;
+    margin-top: 10%;
+    font-size:50px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 5%;
+    width: 50px;
+    height: 50px;
+    padding: 5pxpx;
+    font-size: 10px;
+    cursor: pointer;
+  }
+.dark {
+    background-color: #302e2e;
+    color: #eff6f9;
+}
+</style>
+</head>
+<body class="light">
+    <h1 class="title">TEAM AUV</h1>
+    <button class="button" onclick="switchTheme()">Change Theme</button>
+
+  <script>
+    function switchTheme() {
+      const body = document.body;
+      body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
